@@ -44,6 +44,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
     "node-sass": "^5.0.0",
-    "redux-devtools": "^3.7.0"
+    "redux-devtools": "^3.7.0",
+    "sass-loader": "^11.0.1"
   }
 }
