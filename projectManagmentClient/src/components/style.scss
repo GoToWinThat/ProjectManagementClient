@@ -1,0 +1,65 @@
+$myColor: rgb(41,41,41);
+$myColor2: rgba(93, 252, 1, 0.959);
+
+.navbar {
+    background-color: $myColor;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    height: 7.75ch !important;
+    padding-right: 1vh !important;
+    margin: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 1ch;
+
+    .MuiFormControl-root{
+        padding: 0 !important;
+    }
+
+
+    .navbar-right {
+        padding: 0 !important;
+
+        .userIcons{
+            color: $myColor2;
+
+        }
+    }
+
+    .searchIcons {
+        color: $myColor2;
+    }
+}
+
+.menu {
+
+}
+
+.sidebar {
+    background-color: $myColor !important;
+    padding: 0 !important;
+    width: 20vh;
+
+    #logo {
+        background-color: black;
+        height: 8ch;
+        h1 {
+            color: white;
+        }
+    }
+}
+
+.content {
+    -moz-box-shadow:    inset 20px 20px 50px #1d1d1d;
+    -webkit-box-shadow: inset 20px 20px 50px #1d1d1d;
+    box-shadow:         inset 20px 20px 50px #1d1d1d;
+
+    display: flex;
+    h1 {
+        justify-content: center;
+        text-align: center;
+        font-size: 100px;
+        color: white;
+    }
+}
