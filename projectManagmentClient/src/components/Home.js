@@ -1,12 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
 
-const Home = () => (   
-    <div>
-        <h1>
-            content
-        </h1>
-    </div> 
-)
+const Home = () => (
+  <div>
+    <h1>content</h1>
+  </div>
+);
 
 export default Home;
