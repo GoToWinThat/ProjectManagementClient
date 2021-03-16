@@ -1,19 +1,19 @@
 import React from "react";
-import Home from './components/Home';
-import NotFound from './components/NotFound';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Layout from './hocs/Layout';
+import Home from "./components/Home";
+import NotFound from "./components/Shared/NotFound";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Layout from "./hocs/Layout";
 
 function App() {
   return (
-      <Layout>
-        <Router>
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route component={NotFound} />
-          </Switch>
-        </Router>
-      </Layout>
+    <Layout>
+      <Router>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route component={NotFound} />
+        </Switch>
+      </Router>
+    </Layout>
   );
 }
 
