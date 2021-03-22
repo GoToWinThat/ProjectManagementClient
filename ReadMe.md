@@ -1,62 +1,78 @@
 # Project Management - Api
 
-Project Management is application created under university science club - "Referencja".
-
 ## Table of contents
 
 - [General info](#general-info)
-  - [Screenshotss](#screenshots)
+
+- [Screenshotss](#screenshots)
+
 - [Technologies and libraries](#technologies-and-libraries)
+
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+
+- [Prerequisites](#prerequisites)
+
+- [Installation](#installation)
+
 - [Features](#features)
+
 - [Status](#status)
+
 - [License](#license)
+
 - [Contact](#contact)
 
 ## General info
 
-Project Management is an application that will help you manage IT projects. This repository contains a frontend application implementation using React.
+#### [Live demo](#)
+
+Project Management is application created under university science club - "Referencja".
+
+Project Management is an application that will help you manage IT projects. This repository contains a frontend application implementation using React. The project was initialized with `create-react-app`.
+
+- [API github](https://github.com/GoToWinThat/ProjectManagementApi)
+- [APP github](https://github.com/GoToWinThat/ProjectManagementClient)
 
 ### Screenshots - Design of application
 
-<img src="/screenshots/Login.png" alt="First screenshot"> <img src="/screenshots/Projects.png" alt="Second screenshot">
-<img src="/screenshots/Task.png" alt="Thirdscreenshot">
+<img  src="/screenshots/Login.png"  alt="First screenshot"> <img  src="/screenshots/Projects.png"  alt="Second screenshot">
+
+<img  src="/screenshots/Task.png"  alt="Thirdscreenshot">
 
 ## Technologies and libraries
 
-- ASP.NET Core 5
-- Entity Framework Core 5
-- React 17
-- SignalR
-- MediatR
-- AutoMapper
-- FluentValidation
-- NUnit, FluentAssertions & Moq
-- Newtonsoft.Json
-- SQL Server
+- react
+- redux
+- react-router-dom
+- axios
+- bootstrap
+- scss (Styling)
+- jest + enzyme (Tests)
 
 ## Getting Started
 
-The easiest way to get started is to follow few step to install all dependencies and run the projects
-
 ### Prerequisites
 
-- npm
-
-```sh
-npm install npm@latest -g
-```
-
-- .net 5.0
-  [dotnet](https://dotnet.microsoft.com/download)
+- Node
+- Yarn
 
 ### Installation
 
-1. Clone the repo
+1. After cloning or extracting the .zip files of this repository:
+   `cd ProjectManagementClient\projectManagmentClient`
+
+2. Install dependencies:
+   `yarn` or `yarn install`
+
+3. After installation of dependencies, you must create .env files, I've already created sample file in the repository, you need to rename them and provide your environment variables:
+   `.envClient` to `.env`
+
+4. Start the project:
+   `yarn start`
 
 ## Features
+
+Section in progress
 
 ## Status
 
