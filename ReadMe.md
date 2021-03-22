@@ -59,15 +59,19 @@ Project Management is an application that will help you manage IT projects. This
 ### Installation
 
 1. After cloning or extracting the .zip files of this repository:
+
    `cd ProjectManagementClient\projectManagmentClient`
 
 2. Install dependencies:
+
    `yarn` or `yarn install`
 
 3. After installation of dependencies, you must create .env files, I've already created sample file in the repository, you need to rename them and provide your environment variables:
+
    `.envClient` to `.env`
 
 4. Start the project:
+
    `yarn start`
 
 ## Features
