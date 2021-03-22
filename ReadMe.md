@@ -1,10 +1,10 @@
-# Project Management - Api
+# Project Management - Client
 
 ## Table of contents
 
 - [General info](#general-info)
 
-- [Screenshotss](#screenshots)
+- [Screenshots](#Screenshots)
 
 - [Technologies and libraries](#technologies-and-libraries)
 
