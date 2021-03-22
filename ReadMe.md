@@ -89,10 +89,17 @@ Distributed under the MIT License.
 ## Contact
 
 Created by:
-[@mazela](https://www.linkedin.com/in/artur-mazela-203568146/)
-[@lubera](https://www.linkedin.com/in/konrad-lubera-859247207/)
-[@kajstura](https://www.linkedin.com/in/wojciech-kajstura-b13b701a8/)
-[@sobieszczyk](https://www.linkedin.com/in/piotr-sobieszczyk/)
-[@nawrot](https://www.linkedin.com/in/karol-nawrot-5896601a7/)
-[@jaskolski](https://www.linkedin.com/in/robertjaskolski/)
+
+- [@mazela](https://www.linkedin.com/in/artur-mazela-203568146/)
+
+- [@lubera](https://www.linkedin.com/in/konrad-lubera-859247207/)
+
+- [@kajstura](https://www.linkedin.com/in/wojciech-kajstura-b13b701a8/)
+
+- [@sobieszczyk](https://www.linkedin.com/in/piotr-sobieszczyk/)
+
+- [@nawrot](https://www.linkedin.com/in/karol-nawrot-5896601a7/)
+
+- [@jaskolski](https://www.linkedin.com/in/robertjaskolski/)
+
 Feel free to contact us!
