@@ -1,11 +1,11 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import "./style.scss";
 
 function WithFullHeightLayout({ children }) {
   return (
-    <Container fluid className="fullHeight">
+    <section className="fullHeight">
       <div className="content">{children}</div>
-    </Container>
+    </section>
   );
 }
 
