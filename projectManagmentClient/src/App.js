@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./components/Home";
 import NotFound from "./components/Shared/NotFound";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./default.scss";
 
 // HoC imports
 import WithNavbarsLayout from "./hocs/WithNavbarsLayout";

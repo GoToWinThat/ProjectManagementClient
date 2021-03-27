@@ -6,26 +6,19 @@ $contentBackgroundColor: rgb(34, 34, 34);
 $Navscolor: rgb(41, 41, 41);
 $boxShadowColor: rgba(30, 30, 30, 255);
 
-#root {
-  height: 100;
-  background-color: $contentBackgroundColor;
-}
-
 .container-fluid {
   height: 100%;
-
   .col {
-    padding: 0 !important;
+    padding: 0;
     .content {
+      height: auto;
       background-color: $contentBackgroundColor;
-      height: 100vh;
     }
     nav {
       background-color: $Navscolor;
       box-shadow: 5px 5px 5px $boxShadowColor;
     }
   }
-
   .row {
     height: 100%;
   }
