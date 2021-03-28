@@ -1,0 +1,42 @@
+// Variables
+$contentBackgroundColor: rgb(34, 34, 34);
+
+// Box-sizing
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// Color and height style
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  background-color: $contentBackgroundColor;
+}
+
+// Font styles
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 400;
+  color: white;
+}
+
+// Links styles
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a,
+a:hover {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}

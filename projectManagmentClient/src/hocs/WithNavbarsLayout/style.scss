@@ -1,0 +1,30 @@
+// div {
+//     border: 1px solid black;
+// }
+
+$contentBackgroundColor: rgb(34, 34, 34);
+$Navscolor: rgb(41, 41, 41);
+$boxShadowColor: rgba(30, 30, 30, 255);
+
+.container-fluid {
+  height: 100%;
+  .col {
+    padding: 0;
+    .content {
+      height: auto;
+      background-color: $contentBackgroundColor;
+    }
+    nav {
+      background-color: $Navscolor;
+      box-shadow: 5px 5px 5px $boxShadowColor;
+    }
+  }
+  .row {
+    height: 100%;
+  }
+}
+
+.sidebar {
+  background-color: $Navscolor;
+  //box-shadow: inset -5px 0px $boxShadowColor;
+}

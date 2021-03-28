@@ -2,18 +2,34 @@ import React from "react";
 import Home from "./components/Home";
 import NotFound from "./components/Shared/NotFound";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Layout from "./hocs/Layout";
+import "./default.scss";
+
+// HoC imports
+import WithNavbarsLayout from "./hocs/WithNavbarsLayout";
+import WithFullHeightLayout from "./hocs/WithFullHeightLayout";
 
 function App() {
   return (
-    <Layout>
-      <Router>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route component={NotFound} />
-        </Switch>
-      </Router>
-    </Layout>
+    <Router>
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <WithNavbarsLayout>
+              <Home />
+            </WithNavbarsLayout>
+          )}
+        />
+        <Route
+          render={() => (
+            <WithFullHeightLayout>
+              <NotFound />
+            </WithFullHeightLayout>
+          )}
+        />
+      </Switch>
+    </Router>
   );
 }
 
