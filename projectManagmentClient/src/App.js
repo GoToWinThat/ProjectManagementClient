@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./default.scss";
 
 // HoC imports
-import WithNavbarsLayout from "./hocs/WithNavbarsLayout";
-import WithFullHeightLayout from "./hocs/WithFullHeightLayout";
+import WithNavbarsLayout from "./wrappers/WithNavbarsLayout";
+import WithFullHeightLayout from "./wrappers/WithFullHeightLayout";
 
 function App() {
   return (
