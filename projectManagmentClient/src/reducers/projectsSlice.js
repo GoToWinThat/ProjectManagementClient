@@ -4,11 +4,7 @@ import request from '../services/request'
 
 
 
-const initialState = {
-    items: [],
-    status: statusTypes.IDLE,
-    error: null
-}
+
 export const fetchProjects = createAsyncThunk('projects/fetchAll', async () => {
     return request({
         method: 'get',
@@ -20,15 +16,18 @@ export const fetchProjectById = createAsyncThunk('projects/fetchById', async (pr
     return request({
         method: 'get',
         url: `Projects/${projectId}`,
-
     })
 })
+
 const projectsSlice = createSlice({
     name: 'projects',
-    initialState,
-    reducers: {},
+    initialState: {
+        items: [],
+        status: statusTypes.IDLE,
+        error: null
+    },
     extraReducers: {
-        [fetchProjects.pending]: (state, action) => {
+        [fetchProjects.pending]: (state) => {
             state.status = statusTypes.LOADING
         },
         [fetchProjects.fulfilled]: (state, action) => {
@@ -38,7 +37,21 @@ const projectsSlice = createSlice({
         [fetchProjects.rejected]: (state, action) => {
             state.status = statusTypes.FAILED
             state.error = action.payload
-        }
+        },
+        [fetchProjectById.pending]: (state) => {
+            state.status = statusTypes.LOADING
+        },
+        [fetchProjectById.fulfilled]: (state, action) => {
+            state.status = statusTypes.SUCCEEDED
+            if (!state.items.some(p => p.id === action.payload.id)) {
+                state.items.push(action.payload)
+            }
+        },
+        [fetchProjectById.rejected]: (state, action) => {
+            state.status = statusTypes.FAILED
+            state.error = action.payload
+        },
+
     }
 })
 
