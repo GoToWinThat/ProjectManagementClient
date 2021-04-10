@@ -6,6 +6,6 @@ export const statusTypes = {
 
 }
 export const constants = {
-    localApiURL: 'http://localhost:5001/api/'
+    localApiURL: 'https://localhost:5001/api/'
 
 }

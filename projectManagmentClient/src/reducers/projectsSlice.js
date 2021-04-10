@@ -9,12 +9,19 @@ const initialState = {
     status: statusTypes.IDLE,
     error: null
 }
-export const fetchProjects = createAsyncThunk('projects/fetchProjects', async () => {
-    request({
+export const fetchProjects = createAsyncThunk('projects/fetchAll', async () => {
+    return request({
         method: 'get',
-        url: 'Project'
-    }).then((response) => { return response.projectList })
+        url: 'Projects',
+    })
+})
 
+export const fetchProjectById = createAsyncThunk('projects/fetchById', async (projectId) => {
+    return request({
+        method: 'get',
+        url: `Projects/${projectId}`,
+
+    })
 })
 const projectsSlice = createSlice({
     name: 'projects',
@@ -26,7 +33,7 @@ const projectsSlice = createSlice({
         },
         [fetchProjects.fulfilled]: (state, action) => {
             state.status = statusTypes.SUCCEEDED
-            state.items = state.items.concat(action.payload)
+            state.items = action.payload.projectList
         },
         [fetchProjects.rejected]: (state, action) => {
             state.status = statusTypes.FAILED
