@@ -1,10 +1,7 @@
-// div {
-//     border: 1px solid black;
-// }
-
 $contentBackgroundColor: rgb(34, 34, 34);
-$Navscolor: rgb(41, 41, 41);
+$navscolor: rgb(41, 41, 41);
 $boxShadowColor: rgba(30, 30, 30, 255);
+$navbarHeight: 60px;
 
 .container-fluid {
   height: 100%;
@@ -15,16 +12,41 @@ $boxShadowColor: rgba(30, 30, 30, 255);
       background-color: $contentBackgroundColor;
     }
     nav {
-      background-color: $Navscolor;
+      height: $navbarHeight;
+      background-color: $navscolor;
       box-shadow: 5px 5px 5px $boxShadowColor;
     }
   }
   .row {
-    height: 100%;
+    .sidebar {
+      background-color: $navscolor;
+      width: 120px;
+      display: flex;
+
+      #logo {
+        align-items: center;
+        justify-content: center;
+        height: $navbarHeight;
+        margin-left: auto;
+        margin-right: auto;
+
+        h1 {
+          height: 8vh;
+          align-items: center;
+        }
+      }
+    }
   }
 }
 
-.sidebar {
-  background-color: $Navscolor;
-  //box-shadow: inset -5px 0px $boxShadowColor;
+@media (min-width : 409px) {
+  .sidebar_blue {
+    display: none;
+  }
+}
+
+.container-fluid .row .sidebar {
+  @media (max-width : 409px) {
+    display: none;
+  }
 }

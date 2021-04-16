@@ -1,3 +1,4 @@
+// unused
 $myColor: rgb(41,41,41);
 $myColor2: rgba(93, 252, 1, 0.959);
 
@@ -12,11 +13,12 @@ $myColor2: rgba(93, 252, 1, 0.959);
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     padding-left: 1ch;
+    align-items: center;
+    vertical-align: middle;
 
     .MuiFormControl-root{
         padding: 0 !important;
     }
-
 
     .navbar-right {
         padding: 0 !important;
@@ -39,7 +41,7 @@ $myColor2: rgba(93, 252, 1, 0.959);
 .sidebar {
     background-color: $myColor !important;
     padding: 0 !important;
-    width: 20vh;
+    width: 60px;
 
     #logo {
         background-color: black;
