@@ -1,5 +1,23 @@
-.sidebar_blue {
+@import "src/components/style";
+
+.sidebarButton {
   vertical-align: middle;
   border:none;
   background-color: rgba(0,33,255,0);
+}
+
+.container-fluid {
+  height: 100%;
+  .col {
+    padding: 0;
+    .content {
+      height: auto;
+      background-color: $contentBackgroundColor;
+    }
+    nav {
+      height: $navbarHeight;
+      background-color: $navcolor;
+      box-shadow: 5px 5px 5px $boxShadowColor;
+    }
+  }
 }

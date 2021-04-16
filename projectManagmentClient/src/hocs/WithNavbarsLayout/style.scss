@@ -1,52 +1,16 @@
-$contentBackgroundColor: rgb(34, 34, 34);
-$navscolor: rgb(41, 41, 41);
-$boxShadowColor: rgba(30, 30, 30, 255);
-$navbarHeight: 60px;
+@import "src/components/style";
 
-.container-fluid {
-  height: 100%;
-  .col {
-    padding: 0;
-    .content {
-      height: auto;
-      background-color: $contentBackgroundColor;
-    }
-    nav {
-      height: $navbarHeight;
-      background-color: $navscolor;
-      box-shadow: 5px 5px 5px $boxShadowColor;
-    }
-  }
-  .row {
-    .sidebar {
-      background-color: $navscolor;
-      width: 120px;
-      display: flex;
+$widthCollapse: 810px;
 
-      #logo {
-        align-items: center;
-        justify-content: center;
-        height: $navbarHeight;
-        margin-left: auto;
-        margin-right: auto;
 
-        h1 {
-          height: 8vh;
-          align-items: center;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width : 409px) {
-  .sidebar_blue {
+@media (min-width : $widthCollapse) {
+  .sidebarButton {
     display: none;
   }
 }
 
-.container-fluid .row .sidebar {
-  @media (max-width : 409px) {
+.container-fluid .row .sidebarMenu {
+  @media (max-width : $widthCollapse) {
     display: none;
   }
 }
