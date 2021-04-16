@@ -1,8 +1,9 @@
 import React from "react";
+import ProjectTileList from "../containers/ProjectTileList/ProjectTileList";
 
 const Home = () => (
   <div>
-    <h1>content</h1>
+      <ProjectTileList />
   </div>
 );
 
