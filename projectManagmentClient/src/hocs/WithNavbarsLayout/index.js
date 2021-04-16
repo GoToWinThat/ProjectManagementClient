@@ -1,24 +1,21 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
+import Sidebar from "../../components/Sidebar/Sidebar";
 import { Container, Row, Col } from "react-bootstrap";
 import "./style.scss";
 
-const WithNavbarsLayout = ({ children }) => {
+const WithNavbarLayout = ({ children }) => {
   return (
     <Container fluid>
       <Row>
-        <div className="sidebar menu">
-          <div id="logo">
-            <h1>LOGO</h1>
-          </div>
-        </div>
+        <Sidebar />
         <Col>
           <Navbar />
-          <div className="content">{children}</div>
+          <div className="mainContent">{children}</div>
         </Col>
       </Row>
     </Container>
   );
 };
 
-export default WithNavbarsLayout;
+export default WithNavbarLayout;

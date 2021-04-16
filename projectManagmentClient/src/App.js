@@ -1,11 +1,11 @@
 import React from "react";
-import Home from "./components/Home";
+import Home from "./components/Home/Home";
 import NotFound from "./components/Shared/NotFound";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./default.scss";
 
 // HoC imports
-import WithNavbarsLayout from "./hocs/WithNavbarsLayout";
+import WithNavbarLayout from "./hocs/WithNavbarsLayout";
 import WithFullHeightLayout from "./hocs/WithFullHeightLayout";
 
 function App() {
@@ -16,9 +16,9 @@ function App() {
           exact
           path="/"
           render={() => (
-            <WithNavbarsLayout>
+            <WithNavbarLayout>
               <Home />
-            </WithNavbarsLayout>
+            </WithNavbarLayout>
           )}
         />
         <Route

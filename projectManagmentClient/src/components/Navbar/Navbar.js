@@ -16,7 +16,7 @@ const NavigationBar = () => {
     return (
         <Navbar className="navbar menu">
             <IconContext.Provider value={{ className: "userIcons", color: "#F0F0F0" }}>
-                <button onClick={showSidebar} className={sidebar ? 'sidebar_blue' : 'sidebar_blue'}>
+                <button onClick={showSidebar} className={sidebar ? ['sidebarButton'] : ['sidebarButton']}>
                     <BsChevronDoubleRight size={20} />
                 </button>
             </IconContext.Provider>

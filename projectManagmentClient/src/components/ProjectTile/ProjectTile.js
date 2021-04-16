@@ -5,7 +5,7 @@ import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 function ProjectTile(props) {
   const { name, activeTasks, progressBar, typeOfProject, endDate } = props;
   return (
-    <section>
+    <section className="item">
       <div>
         <CircularProgressbar
           styles={buildStyles({

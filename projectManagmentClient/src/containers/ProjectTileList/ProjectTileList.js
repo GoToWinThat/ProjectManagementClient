@@ -37,11 +37,11 @@ const projects = [
 ];
 function ProjectTileList() {
   return (
-    <div>
+    <>
       {projects.map((item) => (
         <ProjectTile key={item.id} {...item} />
       ))}
-    </div>
+    </>
   );
 }
 
